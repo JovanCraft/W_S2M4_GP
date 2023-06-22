@@ -1,11 +1,13 @@
 /* https://meyerweb.com/eric/tools/css/reset/ */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Asterisk is a universal selector. It means EVERYTHING!!*/
 * {
   margin: 0;
 }
