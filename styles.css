@@ -1,1 +1,22 @@
 /* styles here */
+
+body {
+    margin: 10px;
+    padding: 6px;
+    line-height: 1.3;
+    /* border: 3px dashed gray; */
+}
+
+.legal {
+    font-size: 0.8rem;
+    /* if default font size in your browser is 16 pixels,
+    0.5rem would mean "8px"*/
+    margin-bottom: 1.5rem;
+    /* 2rem would be 32px in MOST browsers*/
+}
+
+.separator {
+    margin: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
