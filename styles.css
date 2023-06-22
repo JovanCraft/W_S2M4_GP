@@ -7,8 +7,36 @@ body {
     /* border: 3px dashed gray; */
 }
 
-.legal {
+
+a[href ="https://www.gutenberg.org"] {
+    color: darkcyan;
+    /* This make it specifically target the anchor tag with the mentioned href url*/
+}
+
+nav a {
+    color: orange;
+    /* This is more specific so it will stay orange instead of turning another color*/
+}
+
+a {
+    color: greenyellow;
+}
+
+nav {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 1.2rem;
+    text-align: center;
+}
+
+.smallish {
     font-size: 0.8rem;
+}
+
+.legal {
+
     /* if default font size in your browser is 16 pixels,
     0.5rem would mean "8px"*/
     margin-bottom: 1.5rem;
@@ -17,6 +45,43 @@ body {
 
 .separator {
     margin: 2rem;
-    font-size: 0.8rem;
+
     text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: "***";
+}
+
+.chapter {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.chapter>p {
+    /* .chapter>p means "paragraphs that are direct children of elements with a class name of 'chapter'" */
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    margin: 1rem 0 1rem 0;
+    /* DON'T FORGET: TRBL! Top Right Bottom Left! */
+    text-align: justify;
+}
+
+p:nth-of-type(1) {
+    /* This is a psuedo class. This means the first(or whichever number you put as the argument) element of type 'paragraph' within its parent, NOT the first child within its parent(The first child that is a PARAGRAPH). the argument numbers are NOT zero indexed!*/
+    text-align: center;
+}
+
+p:nth-of-type(2) {
+    text-align: right;
+}
+
+p:nth-of-type(3)::first-line{
+    font-weight: bold;
+}
+
+p:nth-of-type(3)::first-letter{
+    font-size: 2em;
+    /* 2em means twice the font size that would currently inherit to me!! */
 }
